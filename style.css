@@ -1,0 +1,109 @@
+/**
+ * Styles for TakeoutRoulette
+ */
+
+html,body { height: 100%; margin:0px; padding:0px; font-family:Federo,Arial,Helvetica,sans-serif;}
+
+body {
+
+    margin: 0;
+    background-repeat: no-repeat;
+    
+    background: #999; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#FFFFFF'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#FFF)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #eee,  #fff); /* for firefox 3.6+ */ 
+}
+
+#header { width:100%; background:#00733C; border-bottom:4px solid #006F48; }
+#header .content { width:900px; color:white; margin:0px auto; padding:10px 0px; overflow:auto;}
+#header .content h1 { 
+    float:left; 
+    font-size:45px; font-weight:bold; 
+    margin:0px; padding:0px; 
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+#header .content .region { float:right; margin-top:10px; margin-right:10px; font-size:14px; text-shadow: black 0.1em 0.1em 0.2em; text-align:right;}
+
+#header .yelpheader { font-size:12px; width:160px; position:absolute; height:60px; color:white; top:5px; left:5px; }
+#header .yelpheader img { height:50px; position:absolute; bottom:0px; right:0px;}
+
+#container { 
+    width:900px;
+    margin:0px auto;
+    background:white;
+    min-height:80%;
+    padding-top:10px;
+}
+
+#grid { height: 480px;  }
+#grid .griditem { 
+    position:relative;
+    float:left; 
+    margin:10px 25px; padding:10px; 
+    width:380px; height:220px; 
+    border:1px solid #006F48;
+    -moz-border-radius: 10px; /* Firefox */
+    -webkit-border-radius: 10px; /* Safari, Chrome */
+    border-radius: 10px; /* CSS3 */
+}
+#grid .griditem:nth-child(2n) { margin-left:12.5px; }
+#grid .griditem h2 { margin:0px; }
+
+#grid .griditem h2 a { color:black; text-decoration:none; }
+#grid .griditem h2 a .quotes { display:none; }
+#grid .griditem h2 a:hover { color:#006F48; text-decoration:none; }
+#grid .griditem h2 a:hover .quotes { display:inline; }
+#grid .griditem .stars { width:90px; height:16px; float:right; padding-left:10px; }
+#grid .griditem .reviewcount { width:90px; float:right; font-size:12px; clear:right; margin-top:3px; text-align:right;}
+
+#grid .griditem .details { position:absolute; left:10px; top:75px;}
+#grid .griditem .details .biz-img { padding-right:10px; float:left; width:100px; height:auto; }
+#grid .griditem .details .text-cont { float:right; width:260px; }
+#grid .griditem .details .more-reviews { display:block; text-decoration:none; cursor:pointer; padding-top:0.5em;}
+#grid .griditem .details .more-reviews:hover { display:block; float:right; width:260px; color:#006F48;  }
+
+#grid .griditem .actions { position: absolute; bottom:0px; right:5px; }
+#grid .griditem .actions .call { width:50px; height:50px; }
+
+#footer { font-size:12px; overflow:auto; display:block; width:100%; }
+#footer .copyright { float:left; }
+#footer .links { float:right; }
+#footer .links img, #footer .copyright img { height:25px;}
+#footer .links .yelp { height:40px; }
+#footer .links span { line-height:0px;}
+
+
+.refresh { cursor:pointer; }
+.refresh-single .refresh { position:absolute; bottom:5px; left:5px; width:25px; height:auto;}
+
+.listing_more .reviews { padding-bottom:38px; }
+.listing_more .review { width:410px; overflow:auto; padding:3px 0px; border-bottom:1px solid #ccc; }
+.listing_more .review:last-child { border-bottom:0px; }
+.listing_more .review .reviewleft { width:100px; float:left; }
+.listing_more .review .reviewright { width:300px; float:left; margin-left:10px; }
+.listing_more .review .reviewright .more { color:#999; text-decoration:none; }
+.listing_more .review .reviewright .more:hover { color:#006F48; text-decoration:underline; }
+
+.in-call { width:610px; overflow:auto; }
+.in-call .business-details { float:left; width:200px;}
+.in-call .reviews { float:right; }
+.in-call .reviewleft, .in-call .reviewright { float:right; }
+.in-call .view-on-yelp { color:#999; text-decoration:none; }
+.in-call .view-on-yelp span{ display:none; }
+.in-call .view-on-yelp:hover { color:#006F48; text-decoration:underline; }
+.in-call .view-on-yelp:hover span{ display:inline; }
+
+.disconnect { width:75px; height:75px; float:left; margin-left:25px; cursor:pointer; }
+
+#disconnect { float:left; margin-left:50px; font-size:16px; 
+        -moz-border-radius: 10px; /* Firefox */
+    -webkit-border-radius: 10px; /* Safari, Chrome */
+    border-radius: 10px; /* CSS3 */
+    background:white; padding:3px;
+    color:#aa0103;
+    text-align:center;
+    display:none;
+}
+
+#disconnect .disconnect { width:42px; height:42px; margin:0px;}
